@@ -10,3 +10,6 @@ will upload some CSS in the mean time
 
 Day 3:
 Uploading the supporting JS and temp images
+
+Day 4.5:
+Recreating project in Flask to stay inline with rest of the group.. and recreate database in the actual format intentded,(Old Files will be moved to a folder called OLD stuff in this repo)
