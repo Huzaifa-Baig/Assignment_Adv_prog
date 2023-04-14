@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+/*Links*/
+.face{
+    background:url(../Images/icons8-facebook-48.png) no-repeat;
+    height:77px;
+    width:77px; 
+    display:block; 
+    float:left; 
+}
+.gmail{
+    background:url(../Images/icons8-gmail-50.png) no-repeat;
+    height:77px; 
+    width:77px; 
+    display:block; 
+    margin-left:10px; 
+    float:left; 
+}
+
+.twit{
+    background:url(../Images/icons8-twitter-60.png) no-repeat;
+    height:77px;
+    width:77px;
+    display:block;
+    margin-left:8px;
+    float:left;
+}
+
+
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/desktop-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* services css */
+.service{
+    width: 100%;
+    height: 100vh;
+   /* background-color: black; */
+    background-size: cover;
+    background-position: center;
+}
+ /* navbar */
+.navbar{
+    color: aliceblue;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:aqua;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*logo*/
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+/*Content*/
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+/*containers custom*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box ::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid aqua;
+    border-bottom: 4px solid aqua;
+    border-left: 4px solid aqua;
+    border-right: 4px solid aqua;
+    border: 4px solid aqua;
+    z-index: -1;
+    /* transform: skewY(15deg);
+    transition: 0.5s ease-in-out; */
+}
+
+.container .box .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+
+
+}
+.container .box .content .icon{
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px , 0 0 0 6px  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+
+}
+/* .container .box:hover .content .icon{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #d0c2c2 , 0 0 0 30px rgb(97, 95, 99)  ;
+} */
+.container .box .content .text {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+
+}
+.container .box .content .text h3{
+    color: #fff;
+}
+
+.container .box:hover .content .text a {
+    position: relative;
+    background: rgb(139, 220, 139);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+/*Direct elements*/
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid aqua;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: aqua;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
