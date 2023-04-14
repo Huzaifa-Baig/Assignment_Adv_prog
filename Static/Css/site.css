@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: aliceblue;
     font-family: sans-serif;
 	box-sizing: border-box;
 }
@@ -8,15 +9,15 @@
 /*Links*/
 .face{
     background:url(../Images/icons8-facebook-48.png) no-repeat;
-    height:77px;
-    width:77px; 
+    height:60px;
+    width:60px; 
     display:block; 
     float:left; 
 }
 .gmail{
     background:url(../Images/icons8-gmail-50.png) no-repeat;
-    height:77px; 
-    width:77px; 
+    height:60px; 
+    width:60px; 
     display:block; 
     margin-left:10px; 
     float:left; 
@@ -24,8 +25,8 @@
 
 .twit{
     background:url(../Images/icons8-twitter-60.png) no-repeat;
-    height:77px;
-    width:77px;
+    height:60px;
+    width:60px;
     display:block;
     margin-left:8px;
     float:left;
@@ -34,12 +35,9 @@
 
 
 /* banner */
-.banner{
+.header{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/desktop-1920x1080.jpg");
-    background-size: cover;
-    background-position: center;
+    padding-bottom: 50px ;
 }
 /* services css */
 .service{
@@ -54,7 +52,6 @@
     color: aliceblue;
     width: 85%;
     margin: auto;
-    padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +92,7 @@
 /*Content*/
 .content{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -111,7 +108,7 @@
     line-height: 20px;
 }
 
-/*containers custom*/
+/*containers custom
 
 .container{
     display: flex;
@@ -145,7 +142,7 @@
     border: 4px solid aqua;
     z-index: -1;
     /* transform: skewY(15deg);
-    transition: 0.5s ease-in-out; */
+    transition: 0.5s ease-in-out; 
 }
 
 .container .box .content{
@@ -175,11 +172,11 @@
     transition: 0.5s ease-in-out;
 
 }
-/* .container .box:hover .content .icon{
+ .container .box:hover .content .icon{
     background: var(--clr);
     color: #2e2e2e;
-    box-shadow: 0 0 0 4px #d0c2c2 , 0 0 0 30px rgb(97, 95, 99)  ;
-} */
+    box-shadow: 0 0 0 4px #d0c2c2 , 0 0 0 60px rgb(97, 95, 99)  ;
+} 
 .container .box .content .text {
     font-size: 1.5rem;
     color: #fff;
@@ -201,8 +198,18 @@
     margin-top: 10px;
     transition: 0.5s ease-in-out;
 }
-
+*/
+/*margin*/
+.margin{
+    margin: 0 auto;
+}
 /*Direct elements*/
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/desktop-1920x1080.jpg");
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
 button{
     width: 200px;
     padding: 15px 0;

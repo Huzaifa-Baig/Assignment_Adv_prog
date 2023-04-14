@@ -11,9 +11,9 @@ app = Flask(__name__)
 def home():
     """Renders the home page."""
     return render_template(
-        'index.html',
+        'home.html',
         title='Home Page',
-        year=datetime.now().year,
+        year=datetime.datetime.now().year,
     )
 
 #Contact Route-
@@ -23,7 +23,7 @@ def contact():
     return render_template(
         'contact.html',
         title='Contact',
-        year=datetime.now().year,
+        year=datetime.datetime.now().year,
         message='Send us a mail at'
     )
 
@@ -32,9 +32,20 @@ def contact():
 def about():
     """Renders the about page."""
     return render_template(
+        'products.html',
+        title='Products',
+        year=datetime.datetime.now().year,
+        message='Your application description page.'
+    )
+
+#Products Route-
+@app.route('/products')
+def products():
+    """Renders the product page."""
+    return render_template(
         'about.html',
         title='About',
-        year=datetime.now().year,
+        year=datetime.datetime.now().year,
         message='Your application description page.'
     )
 
