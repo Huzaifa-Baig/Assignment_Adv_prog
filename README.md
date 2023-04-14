@@ -13,3 +13,7 @@ Uploading the supporting JS and temp images
 
 Day 4.5:
 Recreating project in Flask to stay inline with rest of the group.. and recreate database in the actual format intentded,(Old Files will be moved to a folder called OLD stuff in this repo)Will update The import the new stuffin the morning
+
+Day5:
+On Groupmates request reformiing a few pages to suite razor needs and uploading pages on his behalf
+
