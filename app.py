@@ -6,6 +6,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #HTML page routing
+
+#Homepage Route-
 @app.route('/')
 @app.route('/home')
 def home():
@@ -32,7 +34,7 @@ def contact():
 def about():
     """Renders the about page."""
     return render_template(
-        'products.html',
+        'about.html',
         title='Products',
         year=datetime.datetime.now().year,
         message='Your application description page.'
@@ -43,7 +45,7 @@ def about():
 def products():
     """Renders the product page."""
     return render_template(
-        'about.html',
+        'products.html',
         title='About',
         year=datetime.datetime.now().year,
         message='Your application description page.'

@@ -205,6 +205,8 @@
 }
 /*Direct elements*/
 body{
+    margin :0 auto;
+    max-width:2000px;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/desktop-1920x1080.jpg");
     background-size: cover;
     background-position: fixed;
