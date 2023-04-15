@@ -17,3 +17,8 @@ Recreating project in Flask to stay inline with rest of the group.. and recreate
 Day5:
 On Groupmates request reformiing a few pages to suite razor needs and uploading pages on his behalf
 
+Day 6:
+???? 
+
+Day 7:
+PROFIT!!! We're done, just making the serperate .txt file for the report in a few...

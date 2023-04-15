@@ -1,0 +1,48 @@
+<!--make sure the this bracket remains it for the layout in razor pages-->
+{% extends "layout.html" %}
+
+<!--This brakcet tells the pages that the body portion is available here-->
+{% block content %}
+
+<div class='row'>
+    <div class="col-auto çol-md-4 margin">
+        <div class="text-center">
+            <img src="{{ url_for('Static', filename="Images/soalr.jpg")}}" height="200px" width='200px' class="rounded" alt="Solar Panel">
+            <a href={{ url_for('prod1') }} class="nav-link">View</a>
+        </div>
+    </div>
+    <div class="col-auto çol-md-4">
+        <div class="text-center">
+            <img src="{{url_for('Static', filename="Images/belt.jpg")}}" height="200px" width='200px' class="rounded" alt="Belts">
+            <a href={{ url_for('prod2') }} class="nav-link">View</a>
+        </div>
+    </div>
+    <div class="col-auto çol-md-4">
+        <div class="text-center">
+            <img src="{{ url_for('Static', filenam='Images/Tooth.png') }}" height="200px" width='200px' class="rounded" alt="ToothBrushes">
+            <a href={{ url_for('prod3') }} class="nav-link">View</a>
+        </div>
+    </div>
+</div>
+<div class='row'>
+    <div class="col-auto çol-md-4">
+        <div class="text-center">
+            <img src="{{ url_for('Static', filename='Images/rug.jpg') }}" height="200px" width='200px' class="rounded" alt="Rugs">
+            <a href={{ url_for('prod4') }} class="nav-link">View</a>
+        </div>
+    </div>
+    <div class="col-auto çol-md-4">
+        <div class="text-center">
+            <img src="{{ url_for('Static', filename='Images/light.jpg') }}" height="200px" width='200px' class="rounded" alt="Light">
+            <a href={{ url_for('prod5') }} class="nav-link">View</a>
+        </div>
+    </div>
+    <div class="col-auto çol-md-4">
+        <div class="text-center">
+            <img src="{{ url_for('Static',filename='Images/ph_case.jpg') }}" height="200px" width='200px' class="rounded" alt="Light">
+            <a href={{ url_for('prod6') }} class="nav-link">View</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

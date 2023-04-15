@@ -35,7 +35,7 @@ def about():
     """Renders the about page."""
     return render_template(
         'about.html',
-        title='Products',
+        title='About',
         year=datetime.datetime.now().year,
         message='Your application description page.'
     )
@@ -45,24 +45,71 @@ def about():
 def products():
     """Renders the product page."""
     return render_template(
-        'products.html',
-        title='About',
+        'Products.html',
+        title='Products',
         year=datetime.datetime.now().year,
-        message='Your application description page.'
+        message='Your products description page.'
     )
 
-#Example-
-#@app.route('/APP_PY_ROUTER')
-#def APP_PY_ROUTER():
-#    """Renders the product page."""
-#    return render_template(
-#        'PAGE.html',
-#        title='PAGE TITLE',
-#        year=datetime.datetime.now().year,
-#        message='Your application description page.'
-#    )
+#Product1 Route-
+@app.route('/prod1')
+def prod1():
+    """Renders the product page."""
+    return render_template(
+        'prod1.html',
+        title='Solar Panel',
+        year=datetime.datetime.now().year,
+    )
 
+#Product2 Route-
+@app.route('/prod2')
+def prod2():
+    """Renders the product page."""
+    return render_template(
+        'prod2.html',
+        title='Belts',
+        year=datetime.datetime.now().year,
+    )
 
+#Product3 Route-
+@app.route('/prod3')
+def prod3():
+    """Renders the product page."""
+    return render_template(
+        'prod3.html',
+        title='ToothBrushes',
+        year=datetime.datetime.now().year,
+    )
+#Product4 Route-
+@app.route('/prod4')
+def prod4():
+    """Renders the product page."""
+    return render_template(
+        'prod4.html',
+        title='Rugs',
+        year=datetime.datetime.now().year,
+    )
+
+#Product5 Route-
+@app.route('/prod5')
+def prod5():
+    """Renders the product page."""
+    return render_template(
+        'prod5.html',
+        title='Lights',
+        year=datetime.datetime.now().year,
+    )
+
+#Product6 Route-
+@app.route('/prod6')
+def prod6():
+    """Renders the product page."""
+    return render_template(
+        'prod6.html',
+        title='Phone cases',
+        year=datetime.datetime.now().year,
+    )
+    
 ### Application runner ###
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
