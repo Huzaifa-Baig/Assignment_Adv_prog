@@ -4,20 +4,38 @@
 <!--This brakcet tells the pages that the body portion is available here-->
 {% block content %}
 
-<!--
-
 <div class="col-lg-8 margin">
-    <h1>CRATE OUR QWN WORLD</h1>
-    <P>A full stack web developer is a person who can develop both client and server software.</P>
-    <p>In addition to mastering HTML and CSS, he/she also knows how to: <br> Program a browser (like using JavaScript, jQuery, Angular, or Vue) Program a server (like using PHP, ASP, Python, or Node)</p>
-
-    <div>
-        <button type="button"><span></span> MERN Stack</button>
-        <button type="button"><span></span> MEAN Stack</button>
+    <div class="text-center">
+        <img src="../Static/Images/soalr.jpg" height="200px" width='200px' class="rounded" alt="Solar Panel">
     </div>
+    <h1>Solar Panels</h1>
+    <P>
+        The Solar Panel has many benefits -
+        <ol type="1">
+            <li>
+                It offers you protection from utility bills which are constantly increasing
+            </li>
+            <li>
+                It looks after the majority of your energy needs
+            </li>
+            <li>
+                It provides hot water for usage
+            </li>
+            <li>
+                Protect you against rising electricity bills
+            </li>
+            <li>
+                Grants are available with a limit of 3000 Euros
+            </li>
+            <li>
+                In terms of energy , the value of your property is maximised.
+            </li>
+        </ol>
+    </P>
+    <hr/>
+    <a href={{ url_for('contact') }} class="nav-link">To purchase CLICK HERE</a>
 </div>
 
--->
 
 {% endblock %}
 <!--End body-->
