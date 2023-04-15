@@ -1,5 +1,5 @@
 #gal is gallon
-#bar is barrell
+#ba1r is barrell
 #the purpose of this program is to calculate the carbon footprint
 gal = int (input("please insert here the relevant number of gasoline:"))
 print("The first number of gallons of gasoline is:")
