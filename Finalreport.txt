@@ -29,7 +29,7 @@ At first I found it very difficult. I felt overwhelmed and too scared to try now
 
 Individual Contribution:
 Eimeara: 
-I helped with the front end identifying errors,debugging and testing python code which was for the most part successful
+I helped with the front end identifying errors,debugging,created the report and testing python code which was for the most part successful
 
 Nikhil:
 I developed the Front End design, theme, and name of the web- app we made.
