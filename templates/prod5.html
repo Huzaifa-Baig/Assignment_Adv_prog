@@ -1,0 +1,41 @@
+<!--make sure the this bracket remains it for the layout in razor pages-->
+{% extends "layout.html" %}
+
+<!--This brakcet tells the pages that the body portion is available here-->
+{% block content %}
+
+<div class="col-lg-8 margin">
+    <div class="text-center">
+        <img src="../Static/Images/light.jpg" height="200px" width='200px' class="rounded" alt="Light">
+    </div>
+    <h1>Recycled Plastic Light</h1>
+    <P>
+        Recycled Plastic Light has many uses-
+        <ol type="1">
+            <li>
+                It offers you a nice new flashLight
+            </li>
+            <li>
+                It looks after the majority of nightly needs
+            </li>
+            <li>
+                It provides a bright light.
+            </li>
+            <li>
+                Is comfortable to use and hold.
+            </li>
+            <li>
+                These are available with a limit of 16 Euros
+            </li>
+            <li>
+                In terms of Recycled products, the value of your property is maximised.
+            </li>
+        </ol>
+    </P>
+    <hr/>
+    <a href={{ url_for('contact') }} class="nav-link">To purchase CLICK HERE</a>
+</div>
+
+
+{% endblock %}
+<!--End body-->

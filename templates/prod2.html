@@ -1,0 +1,41 @@
+<!--make sure the this bracket remains it for the layout in razor pages-->
+{% extends "layout.html" %}
+
+<!--This brakcet tells the pages that the body portion is available here-->
+{% block content %}
+
+<div class="col-lg-8 margin">
+    <div class="text-center">
+        <img src="../Static/Images/belt.jpg" height="200px" width='200px' class="rounded" alt="Belts">
+    </div>
+    <h1>Recycled plastic belt</h1>
+    <P>
+        Recycled Plastic belt has many uses-
+        <ol type="1">
+            <li>
+                It offers you protection from utility bills which are constantly increasing
+            </li>
+            <li>
+                It looks after the majority of your fitting needs
+            </li>
+            <li>
+                It provides a nice fashion style to your atire
+            </li>
+            <li>
+                Is comfortable
+            </li>
+            <li>
+                These are available with a limit of 7 Euros
+            </li>
+            <li>
+                In terms of Recycled products, the value of your property is maximised.
+            </li>
+        </ol>
+    </P>
+    <hr/>
+    <a href={{ url_for('contact') }} class="nav-link">To purchase CLICK HERE</a>
+</div>
+
+
+{% endblock %}
+<!--End body-->
