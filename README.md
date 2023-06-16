@@ -33,3 +33,6 @@ PROFIT!!! We're done, just making the serperate .txt file for the report in a fe
 
 Day 8:
 Last day of working on it, Finished it with most of the site holding well and all of the major issues being delt with, minus the oimage clauses not working well with JInja format..
+
+Day 9:
+added the function for login/logut,add and elete user etc trying to add databse if it works...
